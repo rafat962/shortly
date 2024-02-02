@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer components{
+    .fl{
+        @apply flex items-center justify-between
+}
+
+}
+
+
+#cta {
+    background-image: url('./images/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.ficon:hover{
+    filter:invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%)
+}
+
+
+
+
+.top,
+.middle,
+.bottom{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: calc(50% - 2px);
+    background-color: gray;
+    transition: 0.4s ease all;
+}
+
+
+
+.top{
+    transform: translateY(-7px);
+}
+.bottom{
+    transform: translateY(7px);
+}
+
+
+.open .top{
+    transform: rotate(45deg);
+}
+.open .bottom{
+    transform: rotate(-45deg) ;
+    
+}
+.open .middle{
+    transform:  translatex(80px);
+
+}
+
+
+
+#menu{
+    cursor: pointer;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./input.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Shortly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="./js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!-- nav -->
+
+    <nav>
+        <div class="container p-6 max-w-6xl mx-auto">
+            <div class="fl p-4">
+                <div class="fl relative space-x-24">
+                    <img src="./images/logo.svg" alt="">
+                    <div class="lg:flex hidden space-x-8 max-w-2xl">
+                        <a href="#" class="text-gray-300 font-bold text-lg hover:text-black">
+                            Features
+                        </a>
+                        <a href="#" class="text-gray-300 font-bold text-lg hover:text-black">
+                            Pricing
+                        </a>
+                        <a href="#" class="text-gray-300 font-bold text-lg hover:text-black">
+                            Resources
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex max-w-2xl space-x-6">
+                    <button>
+                        <p class="text-gray-300 font-bold text-lg hover:text-black">
+                            Log in
+                        </p>
+                        <button class="px-8 py-4 rounded-full bg-teal-300">
+                            Sign Up
+                        </button>
+                    </button>
+                </div>
+                <!-- menu -->
+                <div id="menu" class="flex-col lg:hidden items-center w-[24px] h-[24px] relative" >
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+                <!-- menu open -->
+                <div id="main-menu" class="absolute top-24 left-4 space-y-8 rounded-xl p-6 w-[95%] hidden flex-col items-center bg-violet-950">
+                    <div class="flex flex-col space-y-6">
+                        <a href="#" class="text-white text-lg font-meduim text-center">
+                            Features
+                        </a>
+                        <a href="#" class="text-white text-lg font-meduim text-center">
+                            Pricing
+                        </a>
+                        <a href="#" class="text-white text-lg font-meduim text-center">
+                            Resources
+                        </a>
+                    </div>
+                    <div class="bg-white border border-white w-full"></div>
+                    <div class="flex flex-col w-full space-y-6">
+                        <a href="#" class="text-white text-lg font-meduim text-center">
+                            Login
+                        </a>
+                        <button class="px-8 py-4 rounded-full w-full bg-teal-300">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero section -->
+
+    <section id="hero">
+        <div class="container p-4 mx-auto mt-8 lg:mt-0">
+            <div class="flex flex-col-reverse items-center justify-between lg:flex-row">
+                <div class="flex flex-col items-center mt-24 md:items-start space-y-10 lg:mt-0">
+                    <h1 class="text-6xl font-bold max-w-md lg:max-w-6xl  text-center md:text-start">
+                        More than just shorter links
+                    </h1>
+                    <div class="flex flex-col space-y-4 items-center md:items-start text-center md:text-start">
+                        <p class="text-2xl text-gray-500 max-w-sm">
+                            Build your brand's recognition and get detailed 
+                            insights on how your links are performing.
+                        </p>
+                        <button class="px-10 text-2xl font-bold text-white py-4 rounded-full bg-teal-300 hover:opacity-80">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                <img src="./images/illustration-working.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- main section -->
+
+    <section id="main" class="bg-gray-100">
+        <div class="p-6 lg:px-36 mt-8 max-w-6xl mx-auto">
+            <div class="flex flex-col space-y-6 items-center  ">
+                <div class="flex flex-col lg:flex-row bg-violet-900 w-full items-center p-8 rounded-lg space-y-4 lg:justify-between lg:space-y-0 lg:space-x-4">
+                    <input type="text" placeholder="Shorten a link here" class="w-5/6 px-2 rounded-xl py-4 placeholder:text-yellow-600 placeholder:pl-6">
+                    <button class="bg-teal-300 lg:w-64 w-5/6 py-4 rounded-xl hover:opacity-90 text-center text-white">
+                        Shorten it!
+                    </button>
+                </div>
+                <div class="flex items-center bg-white flex-col space-y-4 lg:space-y-0 lg:flex-row lg:justify-between w-full p-8 rounded-lg">
+                    <h1 class="text-black font-bold">https://frontendmentor.io</h1>
+                    <div class="flex lg:flex-row flex-col items-center space-y-2 lg:space-y-0 lg:space-x-6">
+                        <h1 class="text-teal-300">https://rel.ink/gxOXp9</h1>
+                        <button class="px-6 py-2 text-white bg-teal-500 rounded-lg
+                            hover:opacity-70">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center bg-white flex-col space-y-4 lg:space-y-0 lg:flex-row lg:justify-between w-full p-8 rounded-lg">
+                    <h1 class="text-black font-bold">https://twitter.com/frontendmentor</h1>
+                    <div class="flex lg:flex-row flex-col items-center space-y-2 lg:space-y-0 lg:space-x-6">
+                        <h1 class="text-teal-300">https://rel.ink/gxOXp9</h1>
+                        <button class="px-6 py-2 text-white bg-teal-900 rounded-lg
+                            hover:opacity-70">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center bg-white flex-col space-y-4 lg:space-y-0 lg:flex-row lg:justify-between w-full p-8 rounded-lg">
+                    
+                    <h1 class="text-black font-bold">https://linkedin.com/frontend-mentor</h1>
+                    <div class="flex lg:flex-row flex-col items-center space-y-2 lg:space-y-0 lg:space-x-6">
+                        <h1 class="text-teal-300">https://rel.ink/gob3X9</h1>
+                        <button class="px-6 py-2 text-white bg-teal-500 rounded-lg
+                            hover:opacity-70">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- advanced section -->
+
+<section id="advanced" class="bg-gray-100">
+    <div class="max-w-6xl mx-auto py-24 p-6 space-y-24">
+        <div class="flex flex-col items-center space-y-8">
+            <h1 class="text-4xl font-bold text-black font-sans text-center">
+                Advanced Statistics
+            </h1>
+            <p class="text-gray-500 text-lg max-w-xs text-center">
+                Track how your links are 
+                performing across the web with our advanced statistics dashboard.
+            </p>
+        </div>
+        <div class="relative max-w-6xl mx-auto flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-16">
+
+            
+            <div class="relative w-full flex flex-col items-center mx-auto p-6 bg-white cursor-pointer rounded-lg">
+                <div class="absolute -top-12 bg-gray-900 p-4 rounded-full ficon transition-all duration-150 ">
+                    <img  src="./images/icon-brand-recognition.svg" alt="">
+                </div>
+                <div class="pt-8 pb-4 flex flex-col items-center space-y-6">
+                    <h1 class="text-black font-bold text-3xl text-center">
+                        Brand Recognition
+                    </h1>
+                    <p class="text-gray-500 text-lg max-w-sm text-center">
+                        Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-full flex flex-col items-center mx-auto p-6 bg-white cursor-pointer rounded-lg">
+                <div class="absolute -top-12 bg-gray-900 p-4 rounded-full ficon transition-all duration-150 ">
+                    <img  src="./images/icon-detailed-records.svg" alt="">
+                </div>
+                <div class="pt-8 pb-4 flex flex-col items-center space-y-6">
+                    <h1 class="text-black font-bold text-3xl text-center">
+                        Detailed Records
+                    </h1>
+                    <p class="text-gray-500 text-lg max-w-sm text-center">
+                        Gain insights into who is clicking your links. Knowing when and where people engage with your 
+                        content helps inform better decisions.
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-full flex flex-col items-center mx-auto p-6 bg-white cursor-pointer rounded-lg">
+                <div class="absolute -top-12 bg-gray-900 p-4 rounded-full ficon transition-all duration-150 ">
+                    <img  src="./images/icon-fully-customizable.svg" alt="">
+                </div>
+                <div class="pt-8 pb-4 flex flex-col items-center space-y-6">
+                    <h1 class="text-black font-bold text-3xl text-center">
+                        Fully Customizable
+                    </h1>
+                    <p class="text-gray-500 text-lg max-w-sm text-center">
+                        Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Before footer -->
+
+    <section id="cta" class=" bg-slate-800">
+        <div class="max-w-6xl py-28 mx-auto flex flex-col items-center space-y-8">
+            <h1 class="text-4xl font-sans font-bold text-white max-w-6xl text-center">Boost your links today</h1>
+            <button class="px-16 py-6 hover:opacity-85 hover:shadow-4xl hover:-rotate-6 focus:rotate-6 transition-all duration-300 mx-auto  rounded-full bg-teal-300">
+                Sign Up
+            </button>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="w-screen  mx-auto flex flex-col lg:items-start items-center lg:flex-row lg:justify-between
+            space-y-8 lg:space-y-0 p-16 bg-slate-900">
+            <img src="./images/logo.svg" alt="">
+            <div class="flex flex-col  max-w-6xl  lg:flex-row  lg:space-x-20  lg:justify-between space-y-16 lg:space-y-0">
+                <div class="flex-col lg:text-start  text-center space-y-4">
+                    <h1 class="text-xl font-medium text-white">
+                        Features
+                    </h1>
+                    <p class="text-gray-400 lg:max-w-14 ">Link Shortening</p>
+                    <p class="text-gray-400 lg:max-w-14 ">Branded Links</p>
+                    <p class="text-gray-400 ">Analytics</p>
+                </div>
+                <div class="flex-col lg:text-start  text-center space-y-4">
+                    <h1 class="text-xl font-medium text-white">
+                        Resources
+                    </h1>
+                    <p class="text-gray-400 ">Blog</p>
+                    <p class="text-gray-400 ">Developers</p>
+                    <p class="text-gray-400 ">Support</p>
+                </div>
+                <div class="flex-col lg:text-start  text-center space-y-4">
+                    <h1 class="text-xl font-medium text-white">
+                        Company
+                    </h1>
+                    <p class="text-gray-400 ">About</p>
+                    <p class="text-gray-400 ">Our Team</p>
+                    <p class="text-gray-400 ">Careers</p>
+                    <p class="text-gray-400 ">Contact</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-52  ">
+                <img class="cursor-pointer  ficon" src="./images/icon-facebook.svg" alt="">
+                <img class="cursor-pointer ficon" src="./images/icon-twitter.svg" alt="">
+                <img class="cursor-pointer ficon" src="./images/icon-pinterest.svg" alt="">
+                <img class="cursor-pointer ficon " src="./images/icon-instagram.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
